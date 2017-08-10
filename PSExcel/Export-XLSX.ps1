@@ -207,7 +207,8 @@
 
         [string[]]$Header,
 
-        [string]$WorksheetName = "Worksheet1",
+	[ValidateLength(1,31)]
+	[string]$WorksheetName = "Worksheet1",
 
         [string[]]$PivotRows,
 
@@ -231,7 +232,7 @@
 
         [switch]$Force,
 
-		[switch]$ClearSheet,
+	[switch]$ClearSheet,
 
         [switch]$ReplaceSheet,
 
