@@ -86,7 +86,8 @@
         })]
         [string]$Coordinates,
        
-        $WorkSheetName,
+        [ValidateLength(1,31)]
+        [String]$WorkSheetName,
 
         [string[]]$Header
 
