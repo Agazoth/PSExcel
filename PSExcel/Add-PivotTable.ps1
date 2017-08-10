@@ -127,7 +127,8 @@
         [parameter( Position = 1,
                     Mandatory=$false,
                     ValueFromPipeline=$false,
-                    ValueFromPipelineByPropertyName=$false)]
+                    ValueFromPipelineByPropertyName=$false)
+                    ValidateLength(1,31)]
         [string]$WorkSheetName,
 
         [parameter( Position = 2,
