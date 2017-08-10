@@ -114,7 +114,8 @@
         [parameter( Position = 2,
                     Mandatory=$false,
                     ValueFromPipeline=$false,
-                    ValueFromPipelineByPropertyName=$false)]
+                    ValueFromPipelineByPropertyName=$false)
+                    ValidateLength(1,31)]
         [string]$TargetWorkSheetName,
 
         [string]$ChartName = 'Chart1',
