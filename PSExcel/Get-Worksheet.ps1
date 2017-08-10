@@ -44,7 +44,8 @@
     param(
         [parameter(Mandatory=$false,
                     ValueFromPipeline=$false,
-                    ValueFromPipelineByPropertyName=$false)]
+                    ValueFromPipelineByPropertyName=$false)
+                    ValidateLength(1,31)]
         [string]$Name,
 
         [parameter( ParameterSetName = "Workbook",
